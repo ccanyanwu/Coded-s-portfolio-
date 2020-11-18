@@ -1,0 +1,72 @@
+:root{
+  --orange :#dd7134;
+  --black:#000;
+  --white:#fff;
+  --brown:#2a2121;
+}
+/*basic css reset */
+*,
+*:before, 
+*:after{
+  box-sizing :border-box ;
+  margin :0 ;
+  padding: 0;
+  overflow-x: hidden ;
+}
+body{
+  background : var(--black);
+  font-family:'Raleway', sans-serif;
+  scroll-behavior: smooth ;
+}
+.hide{display:none;}
+a{text-decoration:none;}
+/*header*/
+header {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url(../images/Headshot.svg) /*no-repeat center center fixed*/; 
+  background-repeat: no-repeat ;
+  background-position :center ;
+  background-attachment:fixed ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position :relative ;
+}
+nav{position :fixed ;}
+h1{
+  background :var(--orange);
+  height :4.4375rem;
+  padding-top :0.5546875rem;
+  text-align :center ;
+  width :4.9375rem;
+}
+.navbar-toggler{background :var(--orange);} 
+.navbar-toggler:focus{
+  border :1px solid var(--white);
+  outline :none ;
+}
+.navbar-toggler .fa-bars{font-size :1.5rem;}
+.nav-link{font-weight: 500 ;}
+.navbar ~ div h2 {
+  color:var(--white) ;
+  font-weight: 900 !important;
+}
+.text-orange{color:var(--orange);}
+.profile div hr{
+  background :var(--orange);
+  height :1.2px;
+  vertical-align :center ;
+}
+.profile div p{position:relative ;}
+.profile_summary{
+  font-size :1.5rem ;
+}
+.profile_summary ~ p{
+  font-size :0.875rem;
+  line-height :1.1rem;
+}
+.profile_summary ~ a:hover, 
+.profile_summary ~ a:visited{
+  color:#fff ;
+  text-decoration:none ;
+}
