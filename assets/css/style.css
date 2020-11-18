@@ -9,11 +9,11 @@
   box-sizing :border-box ;
   margin :0 ;
   padding: 0;
-  overflow-x: hidden ;
 }
 body{
   background : black;
   font-family:'Raleway', sans-serif;
+  overflow-x: hidden !important;
   scroll-behavior: smooth ;
 }
 .hide{display:none;}
@@ -52,12 +52,19 @@ h1{
 }
 .navbar-toggler .fa-bars{font-size :1.5rem;}
 .nav-link{font-weight: 500 ;}
+.nav-link:hover{
+  border-bottom: 0.5px solid #fff;
+  color: var(--orange) !important;
+}
 .navbar ~ div h2 {
   color:white ;
   font-weight: 900 !important;
 }
 .text-orange{color:var(--orange);}
-.profile {margin-top: 10rem;}
+.profile {
+  margin-top: 10rem;
+  overflow-x: hidden !important;
+}
 .profile div hr{
   background :var(--orange);
   height :1.2px;
@@ -88,7 +95,17 @@ h1{
 .do_box div h4{font-size:1rem}
 .do_box div p{font-size :0.85rem ;}
 .do_box:hover{background :var(--orange);}
+
+/*tab view*/
+@media all and (min-width:48rem){
+  header {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5));
+  }
+  .navbar-nav{margin-left: auto ;}
+  .hide{display: block;}
+  hr{display: none;}
+}
+
 /*animations*/
 .pulsate-fwd{-webkit-animation:pulsate-fwd .5s ease-in-out infinite both;animation:pulsate-fwd .5s ease-in-out infinite both;}
-
 @-webkit-keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}
