@@ -1,7 +1,5 @@
 :root{
   --orange :#dd7134;
-  --black:#000;
-  --white:#fff;
   --brown:#2a2121;
 }
 /*basic css reset */
@@ -14,12 +12,15 @@
   overflow-x: hidden ;
 }
 body{
-  background : var(--black);
+  background : black;
   font-family:'Raleway', sans-serif;
   scroll-behavior: smooth ;
 }
 .hide{display:none;}
-a{text-decoration:none;}
+a{
+  text-decoration:none;
+  cursor:pointer ;
+}
 /*header*/
 header {
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url(../images/Headshot.svg) /*no-repeat center center fixed*/; 
@@ -32,7 +33,11 @@ header {
   background-size: cover;
   position :relative ;
 }
-nav{position :fixed ;}
+nav{
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6));
+  position :fixed!important ;
+  z-index: 3 ;
+}
 h1{
   background :var(--orange);
   height :4.4375rem;
@@ -42,16 +47,17 @@ h1{
 }
 .navbar-toggler{background :var(--orange);} 
 .navbar-toggler:focus{
-  border :1px solid var(--white);
+  border :1px solid white;
   outline :none ;
 }
 .navbar-toggler .fa-bars{font-size :1.5rem;}
 .nav-link{font-weight: 500 ;}
 .navbar ~ div h2 {
-  color:var(--white) ;
+  color:white ;
   font-weight: 900 !important;
 }
 .text-orange{color:var(--orange);}
+.profile {margin-top: 10rem;}
 .profile div hr{
   background :var(--orange);
   height :1.2px;
@@ -70,3 +76,19 @@ h1{
   color:#fff ;
   text-decoration:none ;
 }
+#do{background :var(--brown);}
+#do > div > span,
+#projects > div > span{font-size :3.5rem ;}
+#do > div > p, 
+#projects > div > p{font-size: 1.5rem ;}
+.do_box{
+  background :#000;
+  height: 17rem ;
+}
+.do_box div h4{font-size:1rem}
+.do_box div p{font-size :0.85rem ;}
+.do_box:hover{background :var(--orange);}
+/*animations*/
+.pulsate-fwd{-webkit-animation:pulsate-fwd .5s ease-in-out infinite both;animation:pulsate-fwd .5s ease-in-out infinite both;}
+
+@-webkit-keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}
