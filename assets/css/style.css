@@ -32,6 +32,7 @@ header {
   -o-background-size: cover;
   background-size: cover;
   position :relative ;
+  overflow-x: hidden!important ;
 }
 nav{
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6));
