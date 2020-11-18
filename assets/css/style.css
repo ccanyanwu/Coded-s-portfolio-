@@ -98,17 +98,17 @@ h1{
 
 /*tab view*/
 @media all and (min-width:48rem){
-  header {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5));
-  }
+  header {background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5));}
   .navbar-nav{margin-left: auto ;}
   .hide{display: block;}
   hr{display: none;}
+  .profile  h2{font-size: 2.5rem !important;}
 }
 
 /*laptop view*/
 @media all and (min-width:75rem){
   hr{display: block;}
+  .profile  h2{font-size: 3.5rem !important;}
 }
 /*animations*/
 .pulsate-fwd{-webkit-animation:pulsate-fwd .5s ease-in-out infinite both;animation:pulsate-fwd .5s ease-in-out infinite both;}
