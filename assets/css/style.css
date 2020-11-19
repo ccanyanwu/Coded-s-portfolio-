@@ -13,7 +13,9 @@
 body{
   background : black;
   font-family:'Raleway', sans-serif;
+  height: 2000px !important ;
   overflow-x: hidden !important;
+  overflow-y: scroll!important ;
   scroll-behavior: smooth ;
 }
 .hide{display:none;}
@@ -40,7 +42,7 @@ nav{
   z-index: 3 ;
 }
 h1{
-  background :var(--orange);
+  background :transparent ;
   height :4.4375rem;
   padding-top :0.5546875rem;
   text-align :center ;
@@ -72,6 +74,10 @@ h1{
   vertical-align :center ;
 }
 .profile div p{position:relative ;}
+.fa-twitter{
+  color: #fff;
+  font-size :1.5rem ;
+}
 .profile_summary{
   font-size :1.5rem ;
 }
