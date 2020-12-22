@@ -55,7 +55,7 @@ h1{
 }
 .navbar-toggler .fa-bars{font-size :1.5rem;}
 .nav-link{font-weight: 500 ;}
-.nav-link:hover{
+header nav .nav-link:hover{
   border-bottom: 0.5px solid #fff;
   color: var(--orange) !important;
 }
@@ -102,6 +102,17 @@ h1{
 .do_box div h4{font-size:1rem}
 .do_box div p{font-size :0.85rem ;}
 .do_box:hover{background :var(--orange);}
+
+/*projects */
+#projects ul{
+  margin: 0 auto ;
+}
+#projects .nav-link{
+  font-size :0.85rem ;
+  font-weight:600;
+}
+#projects .nav-link:active,
+#projects .nav-link:visited {background :var(--orange)!important;} 
 
 /*tab view*/
 @media all and (min-width:48rem){
